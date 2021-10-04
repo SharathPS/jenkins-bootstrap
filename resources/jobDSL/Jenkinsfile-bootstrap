@@ -1,0 +1,16 @@
+pipelineJob('job-dsl-plugin') {
+  definition {
+    cpsScm {
+      scm {
+        git {
+          remote {
+            url('https://github.com/SharathPS/jenkins-bootstrap.git')
+          }
+          branch('*/main')
+        }
+      }
+      lightweight(false)
+      scriptPath("pipelines/Jenkinsfile-java-version")
+    }
+  }
+}

@@ -4,3 +4,4 @@ resources/helm/secret-files
 bin/helm
 bin/kubectl
 bin/minikube
+.idea
